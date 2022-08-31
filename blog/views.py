@@ -4,6 +4,7 @@ from .models import Post
 from .forms import PostForm
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
+#from .forms import GeeksForm
 # Create your views here.
 
 
