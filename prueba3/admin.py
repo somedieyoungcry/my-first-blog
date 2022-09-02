@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import genNum
+from .models import genNum2
 # Register your models here.
 
-admin.site.register(genNum)
+admin.site.register(genNum2)
