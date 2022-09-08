@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Jango Floats</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type='text/css'>
+</head>
+<body>
+    <div>
+        <h1><a href="/">Jango Flotantes Papi</a></h1>
+    </div>
+    <table class ="table">
+        <thead>
+            <tr>
+                <th scope="col">Variable 1</th>
+                <th scope="col">Variable 2</th>
+                <th scope="col">Variable 3</th>
+            </tr>
+        </thead>
+        {% for flotantes in flotantes %}
+            <tbody>
+                <tr>
+                    <td>{{ flotantes.variable1 }}</td>
+                    <td>{{ flotantes.variable2 }}</td>
+                    <td>{{ flotantes.variable3 }}</td>
+                </tr>
+            </tbody>
+        {% endfor %}
+    </table>
+</body>
+</html>
