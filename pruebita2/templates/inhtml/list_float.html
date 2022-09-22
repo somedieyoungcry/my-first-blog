@@ -1,31 +1,34 @@
-<html>
-<head>
-    <title>Jango Floats</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type='text/css'>
-</head>
-<body>
-    <div>
-        <h1><a href="/">Jango Flotantes Papi</a></h1>
-    </div>
-    <table class ="table">
-        <thead>
-            <tr>
-                <th scope="col">Variable 1</th>
-                <th scope="col">Variable 2</th>
-                <th scope="col">Variable 3</th>
-            </tr>
-        </thead>
-        {% for flotantes in flotantes %}
-            <tbody>
-                <tr>
-                    <td>{{ flotantes.variable1 }}</td>
-                    <td>{{ flotantes.variable2 }}</td>
-                    <td>{{ flotantes.variable3 }}</td>
-                </tr>
-            </tbody>
-        {% endfor %}
-    </table>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alg. Clasificacion</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+   <body>
+        <h1>Algoritmo de Clasificacion</h1>
+        <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">x1</th>
+      <th scope="col">x2</th>
+      <th scope="col">x3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    {% for dato in data %}
+      <th scope="row"></th>
+      <td>{{dato.p1}}</td>
+      <td>{{dato.p2}}</td>
+      <td>{{dato.p3}}</td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
